@@ -19,7 +19,7 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     // calculating total income and total cost
     let totalCost = foodCost + rentCost + clothCost;
     if (totalCost > totalIncome) {
-        console.log('vole number')
+        document.getElementById('error').style.display = 'block';
     }
     else {
         if (typeof totalIncome == 'number' && typeof totalCost == 'number') {
@@ -37,8 +37,8 @@ document.getElementById('save-btn').addEventListener('click', function () {
     let balance = parseInt(getBalance);
     let totalIncome = totalExpenses + balance;
     // get parcentage input value
-    let parcentage = inputValue('parcentage-input')
-    if (isNaN(parcentage)) {
+    let parcentage = inputValue('parcentage-input', 5)
+    if (isNaN(parcentage) || parcentage == 'NaN') {
         console.log('please enter numer')
     }
     // select saving amount, remaining balance and calculating

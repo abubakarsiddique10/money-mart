@@ -23,10 +23,17 @@ button {
 #total-parcentage-input {
     width: 100px;
 }
-.error {
+.error,.error-btn {
     position: absolute;
     top: 95%;
     left: 26%;
+    color: red;
+    display: none;
+}
+#error {
+    position: absolute;
+    top: 75%;
+    left: 40%;
     color: red;
     display: none;
 }
