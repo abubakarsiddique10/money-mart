@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+<!-- row-cols-1 row-cols-lg- g-5  -->
 
 <body>
     <header>
@@ -19,7 +20,7 @@
     <main>
         <section>
             <div class="container">
-                <div class="row gap-5 text-center">
+                <div class="row text-center">
                     <div class="col">
                         <img class="img-fluid w-100 h-100" src="images/image=1.jpg" alt="">
                     </div>
@@ -28,39 +29,39 @@
                             <h4 class="">Income</h4>
                             <div class="width my-3 d-flex justify-content-between align-items-center">
                                 <span class="">Income:</span>
-                                <input type="text">
+                                <input id="total-income" type="text" value="">
                             </div>
                         </div>
                         <div>
                             <h4 class="mb-3">Expenses</h4>
                             <div class="width d-flex justify-content-between align-items-center">
                                 <span class="">Food:</span>
-                                <input type="text">
+                                <input id="total-food-cost" type="text" value="">
                             </div>
                             <div class="width my-3 d-flex justify-content-between align-items-center">
                                 <span class="">Rent:</span>
-                                <input type="text">
+                                <input id="total-rent-cost" type="text" value="">
                             </div>
                             <div class="width d-flex justify-content-between align-items-center">
                                 <span class="">Clothes:</span>
-                                <input type="text">
+                                <input id="total-cloth-cost" type="text" value="">
                             </div>
                             <div>
-                                <button class="py-2 px-5 border-0 fs-5 my-4 ms-5">Calculate</button>
+                                <button id="calculate-btn" class="py-2 px-5 border-0 fs-5 my-4 ms-5">Calculate</button>
                             </div>
-                            <h5 class="mb-2">Total Expenses: 5500 </h5>
-                            <h5>Balance: 4500</h5>
+                            <h5 class="mb-2">Total Expenses: <span id="total-expenses">00</span> </h5>
+                            <h5>Balance: <span id="balance">00</span></h5>
                         </div>
                         <div>
                             <div class="my-3">
                                 <span>Save:</span>
-                                <input id="parcent-box" type="text" class="px-3 py-1 mx-2 text-center">
+                                <input id="total-parcentage-input" type="text" class="px-3 py-1 mx-2 text-center">
                                 <span>%</span>
-                                <button class="border-0 px-4 py-1 ms-2">Save</button>
+                                <button id="save-btn" class="border-0 px-4 py-1 ms-2">Save</button>
                             </div>
                             <div>
-                                <h5>Saving Amount: 2000 </h5>
-                                <h5>Remaining Balance: 2500 </h5>
+                                <h5>Saving Amount: <span id="savign-amount">00</span> </h5>
+                                <h5>Remaining Balance: <span id="remaining-balance">00</span> </h5>
                             </div>
                         </div>
                     </div>
