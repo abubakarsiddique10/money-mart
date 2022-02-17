@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+body {
+    font-family: 'Roboto', sans-serif; 
+}
+img {
+    object-fit: cover;
+}
+input {
+    background-color: #DCDCDC;
+    border: none;
+    padding: 7px 0 7px 10px;
+    border-radius: 4px;
+}
+.width{
+    width: 260px;
+    margin: 0 auto;
+}
+button {
+    background: #59A5FF;
+    color: #ffffff;
+}
+#parcent-box {
+    width: 100px;
+}
