@@ -8,9 +8,10 @@ img {
 input {
     background-color: #DCDCDC;
     border: none;
-    padding: 7px 0 7px 10px;
+    padding: 8px 0 8px 10px;
     border-radius: 4px;
 }
+/* width div of input */
 .width{
     width: 260px;
     margin: 0 auto;
@@ -21,4 +22,11 @@ button {
 }
 #total-parcentage-input {
     width: 100px;
+}
+.error {
+    position: absolute;
+    top: 95%;
+    left: 26%;
+    color: red;
+    display: none;
 }
